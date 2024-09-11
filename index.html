@@ -1,20 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.:: passionaria ::.</title>
+    <title>Passionaria Peru</title>
+    <!-- Preconexión a Google Fonts para mejorar el rendimiento de carga -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Enlace a Google Fonts con las fuentes seleccionadas -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Enlace al archivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon del sitio -->
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <h1>Passionaria</h1>
-    <p>Calidad, variedad y mucha alma</p>
+    <main>
+        <!-- Encabezado con logo y descripción -->
+        <div class="encabezado">
+            <img src="Logo.webp" alt="">
+            <h1 style="margin-bottom: 0; font-size: 20px;" class="txt">@passionariapy</h1>
+            <p style="margin-top: 3px;" class="txt">Calidad, variedad y mucha alma ✨</p>
+        </div>
 
-    <a href="https://wa.me/+51967395991?text=hola%20prueba">Compra via Whatsapp</a><br>
-    <a href="https://www.passionaria.com.py/web/com.nuevopassionaria.home">Compra en la Web</a><br>
-    <a href="mapa.html">Ubicacion del local</a><br>
-    <a href="https://www.instagram.com/passionaria.pe/" target="_blank">Instagram</a><br>
-    <a href="tel:+51967395991">Llamanos</a>
+        <!-- Sección de botones -->
+        <div class="BOTONES">
+            <!-- Botón para redirigir a WhatsApp -->
+            <a href="https://wa.me//51967395991" target="_blank" class="botones">Compra vía Whatsapp</a>
+            <!-- Botón para compra en la web (actualmente oculto) -->
+            <a href="#" class="botones hidden">Compra en la web</a>
+            <!-- Botón para abrir el modal con la ubicación del local -->
+            <button type="button" class="botones" id="btn_open_modal">Ubicaci&oacute;n del local</button>
 
+            <!-- Modal para mostrar la ubicación del local -->
+            <dialog id="modal">
+                <section class="header">
+                    <!-- Botón para compartir (oculto) -->
+                    <button type="button" class="modal_btn" style="visibility: hidden;">
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </button>
+                    <!-- Título del modal -->
+                    <p style="margin-top: 3px; font-weight: 430;" class="txt">Ubicaci&oacute;n del local</p>
+                    <!-- Botón para cerrar el modal -->
+                    <button type="button" id="btn_close_modal" class="modal_btn"><i class="fa-solid fa-x"></i></button>
+                </section>
+
+                <!-- Mapa de Google Maps con la ubicación del local -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3899.439958082856!2d-76.99694442493613!3d-12.218461988032015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDEzJzA2LjUiUyA3NsKwNTknMzkuNyJX!5e0!3m2!1ses!2spe!4v1726035747916!5m2!1ses!2spe"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <!-- Sección inferior del modal con un enlace -->
+                <section class="footer">
+                    <a href="https://maps.app.goo.gl/ycZpPk2JvtEbasdH7" class="txt" style="color: white; font-size: 15px;">Ir a la ubicaci&oacute;n</a>
+                </section>
+            </dialog>
+
+            <!-- Botón para redirigir a Instagram -->
+            <a href="https://www.instagram.com/passionaria.pe/" target="_blank"
+                class="botones">Instagram</a>
+            <!-- Botón para hacer una llamada telefónica -->
+            <a href="tel:+51967395991" target="_blank" class="botones">Llamanos</a>
+        </div>
+
+        <!-- Sección de iconos de redes sociales -->
+        <div class="iconos">
+            <a href="https://www.instagram.com/passionaria.pe/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me//51967395991"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/PassionariaParaguay/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:passionariapy@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://x.com/passionariapy"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </main>
+
+    <!-- Librería SweetAlert2 para alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>
