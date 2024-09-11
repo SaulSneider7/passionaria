@@ -139,11 +139,26 @@ dialog {
     margin-top: 5px;
 }
 
+/* Estilo del encabezado principal */
+.encabezado-titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* Estilo de la imagen de la bandera */
+.bandera {
+    margin-left: 8px;
+    width: 40px;
+    height: auto;
+}
 /* Estilos para el texto */
 .txt {
     font-family: 'Roboto Slab', serif;
     font-size: 17px;
 }
+
 
 /* Estilos para los iconos sólidos dentro del modal */
 .fa-solid {
