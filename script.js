@@ -6,8 +6,8 @@ window.addEventListener('load', () => {
         // Mantiene el preloader oculto después de la animación
         setTimeout(() => {
             preloader.style.visibility = 'hidden'; // Oculta el preloader
-        }, 3000); // 3 segundos, debe coincidir con la duración de la transición
-    }, 3000); // 3000 milisegundos = 3 segundos
+        }, 1500); // 1.5 segundos, debe coincidir con la duración de la transición
+    }, 1500); // 3000 milisegundos = 3 segundos
 });
 
 
