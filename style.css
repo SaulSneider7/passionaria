@@ -1,25 +1,16 @@
 /* Definición de la paleta de colores en :root */
 :root {
     --primary-color: #7C93C3;
-    /* Rosa claro */
     --secondary-color: white;
-    /* Blanco */
     --button-background: white;
-    /* Fondo de los botones */
-    --button-hover-background: #1E2A5E;
-    /* Rosa claro para hover */
+    --button-hover-background: #fcfcfc;
     --box-shadow-color: #55679C;
-    /* Sombra de los botones */
-    --text-color: rgba(0, 10, 68, 0.74);
-    /* Color del texto */
+    --text-color: rgb(249, 250, 252);
+    --text-color-button: rgb(17, 24, 33);
     --icon-color: white;
-    /* Color de los iconos */
     --modal-background: rgb(17, 24, 33);
-    /* Fondo del modal */
     --footer-background: rgb(17, 24, 33);
-    /* Fondo de la sección inferior del modal */
     --modal-backdrop-color: rgba(0, 0, 0, 0.50);
-    /* Color de fondo del modal */
 }
 
 /* Estilos para el preloader */
@@ -168,7 +159,7 @@ a {
     border-radius: 30px;
     box-shadow: 0px 5px 5px var(--box-shadow-color);
     font-family: "Roboto Slab", serif;
-    color: var(--text-color);
+    color: var(--text-color-button);
     transition: 0.3s;
     cursor: pointer;
 }
@@ -180,7 +171,6 @@ a {
     background-color: var(--button-hover-background);
     transform: scale(1.1);
     transition: 0.3s;
-    color: var(--secondary-color);
 }
 
 /* Estilos para la sección de iconos */
@@ -230,15 +220,15 @@ i {
 
 @keyframes changeBG {
     0% {
-        background-color: #7C93C3;
+        background-color: black;
     }
 
     50% {
-        background-color: #55679C;
+        background-color: #444444;
     }
 
     100% {
-        background-color: #E1D7B7;
+        background-color: #6d6c6a;
     }
 }
 
