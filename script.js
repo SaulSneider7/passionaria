@@ -1,3 +1,16 @@
+// JavaScript para ocultar el preloader después de 3 segundos
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        preloader.style.opacity = '0'; // Desvanece el preloader
+        // Mantiene el preloader oculto después de la animación
+        setTimeout(() => {
+            preloader.style.visibility = 'hidden'; // Oculta el preloader
+        }, 3000); // 3 segundos, debe coincidir con la duración de la transición
+    }, 3000); // 3000 milisegundos = 3 segundos
+});
+
+
 // Selección de los elementos del DOM necesarios para la funcionalidad del modal
 const BtnAbrirModal = document.querySelector("#btn_open_modal");
 const BtnCerrarModal = document.querySelector("#btn_close_modal");
