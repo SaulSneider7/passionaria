@@ -7,7 +7,7 @@
     --box-shadow-color: #55679C;
     --text-color: rgb(249, 250, 252);
     --text-color-button: rgb(17, 24, 33);
-    --icon-color: white;
+    --icon-color: rgb(255, 250, 250);
     --modal-background: rgb(17, 24, 33);
     --footer-background: rgb(17, 24, 33);
     --modal-backdrop-color: rgba(0, 0, 0, 0.50);
@@ -100,7 +100,16 @@ body {
     padding: 0;
     border: 0;
     color: var(--text-color);
-    animation: changeBG 10s infinite alternate linear;
+    /* animation: changeBG 10s infinite alternate linear; */
+}
+
+.fondo_pagina {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/fondo.webp');
+    background-size: 150%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    margin: 0;
 }
 
 /* Estilos del contenedor principal */
@@ -374,6 +383,23 @@ dialog {
 /* Estilos para el iframe del mapa */
 iframe {
     margin: 15px;
+}
+
+.catalogos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.contenedor_catalogo_img {
+    width: 40%;
+    text-align: center;
+}
+
+.contenedor_catalogo_img img {
+    width: 100%;
+    border-radius: 30px;
 }
 
 /* Estilos responsivos para pantallas pequeñas */

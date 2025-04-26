@@ -40,7 +40,7 @@
     <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="fondo_pagina">
     <main>
         <!-- Preloader -->
         <div id="preloader">
@@ -51,7 +51,7 @@
         </div>
 
         <!-- Encabezado con logo y descripción -->
-        <div class="encabezado">
+        <div class="encabezado" style="display: none;">
             <a href="#">
                 <img class="img_logo" src="img/Logo.webp" alt="Logo BrandDesign">
             </a>
@@ -86,7 +86,7 @@
             <a href="#" class="botones hidden">Compra en la web</a>
 
             <!-- Botón para abrir el modal con la ubicación del local -->
-            <button type="button" class="botones" id="btn_open_modal">Ubicaci&oacute;n del local</button>
+            <button type="button" class="botones" id="btn_open_modal" hidden>Ubicaci&oacute;n del local</button>
 
             <!-- Modal para mostrar la ubicación del local -->
             <dialog id="modal">
@@ -121,11 +121,26 @@
             <a href="tel:+51967395991" target="_blank" class="botones">Ll&aacute;manos</a>
         </div>
 
+        <div class="catalogos">
+            <div class="contenedor_catalogo_img">
+                <h2>Cat&aacute;logo Kids</h2>
+                <a href="https://heyzine.com/flip-book/9fb88dfb54.html" target="_blank">
+                    <img src="img/infantil.webp" alt="Cat&aacute;logo 2024">
+                </a>
+            </div>
+            <div class="contenedor_catalogo_img">
+                <h2>Cat&aacute;logo Adulto</h2>
+                <a href="https://heyzine.com/flip-book/a133f16eec.html">
+                    <img src="img/adulto.webp" alt="">
+                </a>
+            </div>
+        </div>
+
         <!-- Sección de iconos de redes sociales -->
         <div class="iconos">
             <a href="https://www.instagram.com/branddperu/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://wa.me//51967395991"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="mailto:enavarro@valjorperu.com"><i class="fa-regular fa-envelope"></i></a>
+            <!-- <a href="mailto:enavarro@valjorperu.com"><i class="fa-regular fa-envelope"></i></a> -->
         </div>
     </main>
 
