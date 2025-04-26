@@ -118,6 +118,73 @@ main {
     align-items: center;
 }
 
+.marcas-trabajo {
+    display: flex;
+    /* Usamos flexbox para colocar los logos uno al lado del otro */
+    justify-content: center;
+    /* Centra los logos horizontalmente */
+    align-items: center;
+    /* Centra los logos verticalmente */
+    margin: 20px 0;
+    /* Espacio superior e inferior para separar los logos del contenido */
+}
+
+.marca {
+    margin: 0 10px;
+    /* Espacio entre los logos */
+}
+
+/* Animación continua */
+.logo-passionaria,
+.logo-roland {
+    animation: fadeInOut 3s infinite;
+    /* Aplica la animación continua */
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0.6;
+        /* Los logos nunca desaparecen por completo */
+        transform: scale(0.9);
+        /* Comienza con un tamaño ligeramente más pequeño */
+    }
+
+    50% {
+        opacity: 1;
+        /* Los logos alcanzan su máxima visibilidad */
+        transform: scale(1.05);
+        /* Escala suavemente a un tamaño un poco más grande */
+    }
+}
+
+/* Efecto de toque */
+.marca:active {
+    transform: scale(0.95);
+    /* Reduce el tamaño al tocar */
+}
+
+.logo-passionaria {
+    width: 120px;
+    /* Ajusta el tamaño según lo necesites */
+    height: 60px;
+    /* Mantiene una altura constante para el logo */
+    border-radius: 10px;
+    /* Hace que el logo de Passionaria sea circular */
+    object-fit: cover;
+    /* Asegura que la imagen se recorte correctamente */
+}
+
+.logo-roland {
+    width: 120px;
+    /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    /* Mantiene la proporción del logo de Roland */
+    border-radius: 10px;
+    /* Mantiene la proporción del logo de Roland */
+}
+
 /* Estilos para la imagen del logo con efecto 3D */
 .img_logo {
     width: 100px;
